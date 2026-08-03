@@ -7,7 +7,10 @@
   color: #2e2f42;
   padding-bottom: 72px;
 }
-
+.portfolio-pages {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
 .portfolio-list {
   display: flex;
   flex-direction: column;
