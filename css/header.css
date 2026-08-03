@@ -5,7 +5,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
 }
 .header-logo-web-first {
   font-family: 'Raleway', sans-serif;
@@ -15,6 +14,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  padding: 16px 0;
 }
 .header-logo-web-first,
 .header-logo-web-second {
@@ -38,7 +38,7 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-left: 76px;
+  margin-left: 120px;
 }
 .navigation-list {
   display: flex;
@@ -146,6 +146,10 @@
   .navigation-list {
     display: flex;
   }
+  .navigation {
+    margin-left: 84px;
+  }
+
   .contact a {
     font-size: 16px;
     letter-spacing: 0.02em;
