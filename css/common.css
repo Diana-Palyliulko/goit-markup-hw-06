@@ -30,7 +30,6 @@ p {
   max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 .sr-only {
