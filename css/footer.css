@@ -207,6 +207,8 @@
   }
 
   .footer-conteiner-form {
-    margin-left: 80px;
+    width: auto;
+    max-width: none;
+    margin-left: auto;
   }
 }
