@@ -4,6 +4,8 @@
 .header-page .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 16px;
 }
 .header-logo-web-first {
   font-family: 'Raleway', sans-serif;
@@ -30,12 +32,12 @@
   color: #2e2f42;
 }
 .navigation {
+  display: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-right: 340px;
   margin-left: 76px;
 }
 .navigation-list {
@@ -52,6 +54,9 @@
 .nav-list-item a:hover {
   color: #404bbf;
 }
+.contact {
+  display: none;
+}
 
 .contact-list {
   font-weight: 400;
@@ -60,12 +65,10 @@
   letter-spacing: 0.02em;
   color: #434455;
   display: flex;
-  align-items: center;
   gap: 40px;
 }
 .contakt-list-item a {
   display: block;
-  padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contakt-list-item a:hover,
@@ -87,4 +90,77 @@
 }
 .nav-list-item {
   position: relative;
+}
+.header-btn-burger {
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.header-burger-svg {
+  color: #2e2f42;
+}
+@media (min-width: 768px) {
+  .header-page .container {
+    justify-content: start;
+    padding: 0 16px;
+  }
+  .navigation {
+    display: flex;
+    margin-left: 120px;
+  }
+  .navigation-list {
+    display: flex;
+  }
+  .contact {
+    display: block;
+    margin-left: auto;
+  }
+  .contact-list {
+    flex-direction: column;
+    gap: 12px;
+    font:
+      400 12px / 1.16667 'Roboto',
+      sans-serif;
+    letter-spacing: 0.04em;
+    color: #434455;
+
+    align-items: flex-start;
+  }
+
+  .header-btn-burger {
+    display: none;
+  }
+}
+
+@media (min-width: 1158px) {
+  .contact {
+    flex-direction: row;
+    column-gap: 40px;
+  }
+  .navigation-list {
+    display: flex;
+    margin-left: 76px;
+  }
+  .contact a {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+  }
+  .contact-list {
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+  }
+  .contakt-list-item a {
+    display: block;
+    padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
