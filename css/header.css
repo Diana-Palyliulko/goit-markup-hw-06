@@ -94,7 +94,7 @@
 .header-btn-burger {
   width: 24px;
   height: 24px;
-  background-color: #fff;
+  background-color: transparent;
   border: none;
   display: flex;
   justify-content: center;
@@ -113,7 +113,6 @@
   }
   .navigation {
     display: flex;
-    margin-left: 120px;
   }
   .navigation-list {
     display: flex;
@@ -146,7 +145,6 @@
   }
   .navigation-list {
     display: flex;
-    margin-left: 76px;
   }
   .contact a {
     font-size: 16px;
